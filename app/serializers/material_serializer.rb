@@ -1,4 +1,5 @@
 class MaterialSerializer
   include FastJsonapi::ObjectSerializer
-  attributes 
+  attributes :title, :description, :url, :category
+  belongs_to :category
 end
