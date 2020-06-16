@@ -1,3 +1,6 @@
+Category.destroy_all
+Material.destroy_all
+
 criminal_justice_reform = Category.create(name: "Criminal Justice Reform")
 bail_funds = Category.create(name: "Bail Funds")
 clothing = Category.create(name: "Clothing")
@@ -17,5 +20,3 @@ other = Category.create(name: "Other")
 
 Material.create(title: "FAMM", description: "Attempting to create a more fair and effective justice system.", category_id: criminal_justice_reform.id)
 
-Category.destroy_all
-Material.destroy_all
