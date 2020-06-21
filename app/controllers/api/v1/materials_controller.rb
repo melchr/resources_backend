@@ -10,7 +10,7 @@ class Api::V1::MaterialsController < ApplicationController
         if material.save
             render json: material, status: :accepted
         else
-            render json: {errors: material.errors.full_messages}, status: :unprocessible_entity
+            render json: {errors: material.errors.full_messages}, status: :bad_request
         end
     end
 
